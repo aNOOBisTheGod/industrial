@@ -1,0 +1,33 @@
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+env:
+  PRIVATE : ${{ secrets.FIREBASE }}
+name: "Build & Release"
+jobs:
+  build:
+    name: Build & Release
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '3.16.8'
+      - run: |
+          touch android/app/google-services.json
+          echo $PRIVATE >> android/app/google-services.json
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - name: Push to Releases
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/release/*"
+          tag: v1.1.${{ github.run_number }}
+          token: ${{ secrets.TOKEN }}
