@@ -23,6 +23,7 @@ jobs:
       - run: |
           touch android/app/google-services.json
           echo $PRIVATE >> android/app/google-services.json
+          cat android/app/google-services.json
       - run: flutter pub get
       - run: flutter build apk --release
       - name: Push to Releases
