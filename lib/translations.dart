@@ -1,0 +1,180 @@
+import 'package:get/get.dart';
+
+class Languages extends Translations {
+  @override
+  Map<String, Map<String, String>> get keys => {
+        'ru_RU': {
+          'Yes': 'Да',
+          'No': 'Нет',
+          'View post': 'Посмотреть пост',
+          'Posts': 'Посты',
+          'Jobs': 'Вакансии',
+          'Post': 'Пост',
+          'Job': 'Вакансия',
+          "People": 'Люди',
+          "Community": 'Сообщество',
+          'Write your comment': 'Напишите свой комментарий',
+          'Comments:': 'Комментарии:',
+          "Search for": 'Что ищем?',
+          "Your chats": "Ваши чаты",
+          "Profile settings": "Настройки профиля",
+          "Switch theme mode": "Переключить тему",
+          "App settings": "Настройки приложения",
+          "Log out": "Выйти",
+          "Home": "Главная",
+          "Search": "Поиск",
+          "Chats": "Чаты",
+          "Profile": "Профиль",
+          "Create post": "Создать пост",
+          "You should sign in your account to message people!":
+              "Войдите в аккаунт, чтобы писать людям",
+          "Attention": "Внимание!",
+          "Do you really want to open link \"@link\" in external browser?":
+              "Вы точно хотите перейти по ссылке: @link?",
+          "Back to login page": "Вернуться ко входу",
+          "Sign Up": "Регистрация",
+          "Insert your password": "Введите свой пароль",
+          "Insert your email": "Введите свою почту",
+          "Insert your real surname": "Введите свою фамилию",
+          "Insert your nickname": "Введите свой никнейм",
+          "Insert your real name": "Введите свое имя",
+          "Log in with Google": "Войти с Google",
+          "Log In": "Войти",
+          "No user found with credentials like that. Do you want to sign up?":
+              "Пользователь с такими данными не найден, хотите зарегистрироваться?",
+          "Respond to this job": "Откликнуться на вакансию",
+          "Send": "Отправить",
+          "Successful response!": "Успешный отклик!",
+          "You can't respond to your own jobs!":
+              "Вы не можете отвечать на свои вакансии!",
+          'Write your response here': 'Напишите текст отклика тут',
+          "Your response": "Ваш отклик",
+          "Your feed": "Ваша лента",
+          "Filter your feed": "Добавьте фильтры к предложениям в ленте",
+          "Insert post interests": "Добавьте темы к вашему посту",
+          "You have already added that interest!": "Вы уже добавляли эту тему!",
+          "Please add interests to your post!":
+              "Пожалуйста, добавьте тему к вашему посту!",
+          "Save filters?": "Сохранить фильтры?",
+          "Success": "Успех!",
+          "Personal data edited!": "Личные данные изменены!",
+          "Save": "Сохранить",
+          "(Click to edit)": "(Нажмите, чтобы изменить)",
+          "Nickname": "Ник",
+          "Name": "Имя",
+          "Surname": "Фамилия",
+          'Message...': "Сообщение...",
+          "Insert job interests": "Добавьте тем к вашей работе!",
+          "Insert salary": "Введите зарплату",
+          "Insert job title": "Введите название работы",
+          "Your post should have at least 1 interest and image or title and description":
+              "У вашего поста должна быть хотя бы одна тема и изображение или заголовок с описанием",
+          "Insert post title": "Введите заголовок поста",
+          "Post...": "Выкладываем...",
+          "Insert description": "Введите описание",
+          "Choose app language": "Выберите язык приложения",
+          "View linked job": "Посмотреть работу",
+          "Start your conversation!": "Начните диалог!",
+          "Your message contains bad words that are prohibited in social network!":
+              "Ваше сообщение содержит слова, которые запрещены в нашей социальной сети!",
+          "Your job contains bad words that are prohibited in social network!":
+              "Ваша работа содержит слова, которые запрещены в нашей социальной сети!",
+          "Your post contains bad words that are prohibited in social network!":
+              "Ваш пост содержит слова, которые запрещены в нашей социальной сети!",
+          "Share": "Поделиться",
+          "Delete": "Удалить",
+          "Report": "Пожаловаться",
+          "You should be authorized to respond to jobs":
+              "Чтобы отвечать на вакансии, вам нужно авторизоваться",
+          "Are you sure you want to delete this post?":
+              "Вы точно хотите удалить этот пост?"
+        },
+        'en_US': {
+          'Yes': 'Yes',
+          'No': 'No',
+          'View post': 'View post',
+          'Posts': 'Posts',
+          'Jobs': 'Jobs',
+          'Post': 'Post',
+          'Job': 'Job',
+          'People': 'People',
+          'Community': 'Community',
+          'Write your comment': 'Write your comment',
+          'Comments:': 'Comments:',
+          'Search for': 'Search for',
+          'Your chats': 'Your chats',
+          'Profile settings': 'Profile settings',
+          'Switch theme mode': 'Switch theme mode',
+          'App settings': 'App settings',
+          'Log out': 'Log out',
+          'Home': 'Home',
+          'Search': 'Search',
+          'Chats': 'Chats',
+          'Profile': 'Profile',
+          'Create post': 'Create post',
+          'You should sign in your account to message people!':
+              'You should sign in your account to message people!',
+          'Attention': 'Attention',
+          'Do you really want to open link "@link" in external browser?':
+              'Do you really want to open link "@link" in external browser?',
+          'Back to login page': 'Back to login page',
+          'Sign Up': 'Sign Up',
+          'Insert your password': 'Insert your password',
+          'Insert your email': 'Insert your email',
+          'Insert your real surname': 'Insert your real surname',
+          'Insert your nickname': 'Insert your nickname',
+          'Insert your real name': 'Insert your real name',
+          'Log in with Google': 'Log in with Google',
+          'Log In': 'Log In',
+          'No user found with credentials like that. Do you want to sign up?':
+              'No user found with credentials like that. Do you want to sign up?',
+          'Respond to this job': 'Respond to this job',
+          'Send': 'Send',
+          'Successful response!': 'Successful response!',
+          "You can't respond to your own jobs!":
+              "You can't respond to your own jobs!",
+          'Write your response here': 'Write your response here',
+          'Your response': 'Your response',
+          'Your feed': 'Your feed',
+          'Filter your feed': 'Filter your feed',
+          'Insert post interests': 'Insert post interests',
+          'You have already added that interest!':
+              'You have already added that interest!',
+          'Please add interests to your post!':
+              'Please add interests to your post!',
+          'Save filters?': 'Save filters?',
+          'Success': 'Success',
+          'Personal data edited!': 'Personal data edited!',
+          'Save': 'Save',
+          '(Click to edit)': '(Click to edit)',
+          'Nickname': 'Nickname',
+          'Name': 'Name',
+          'Surname': 'Surname',
+          'Message...': 'Message...',
+          'Insert job interests': 'Insert job interests',
+          'Insert salary': 'Insert salary',
+          'Insert job title': 'Insert job title',
+          'Your post should have at least 1 interest and image or title and description':
+              'Your post should have at least 1 interest and image or title and description',
+          'Insert post title': 'Insert post title',
+          'Post...': 'Post...',
+          'Insert description': 'Insert description',
+          'Choose app language': 'Choose app language',
+          'View linked job': 'View linked job',
+          'Start your conversation!': 'Start your conversation!',
+          "Your message contains bad words that are prohibited in social network!":
+              "Your message contains bad words that are prohibited in social network!",
+          "Your job contains bad words that are prohibited in social network!":
+              "Your job contains bad words that are prohibited in social network!",
+          "Your post contains bad words that are prohibited in social network!":
+              "Your post contains bad words that are prohibited in social network!",
+          "Share": "Share",
+          "Delete": "Delete",
+          "Report": "Report",
+          "You should be authorized to respond to jobs":
+              "You should be authorized to respond to jobs",
+          "Are you sure you want to delete this post?":
+              "Are you sure you want to delete this post?"
+        }
+      };
+}

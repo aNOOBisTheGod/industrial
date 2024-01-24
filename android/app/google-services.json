@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733373115529",
+    "project_id": "testing-7bca5",
+    "storage_bucket": "testing-7bca5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733373115529:android:7b7e16657cdec1a269ea58",
+        "android_client_info": {
+          "package_name": "com.anoobis.industrial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733373115529-p8iijq04jovsmdou0a5cdkof29gc5eqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPB0XfHuhvKYXEcJKN01ApcBjxTYRDhmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733373115529-p8iijq04jovsmdou0a5cdkof29gc5eqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
