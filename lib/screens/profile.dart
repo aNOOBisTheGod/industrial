@@ -76,9 +76,13 @@ class _ProfilePageState extends State<ProfilePage> {
                               width: context.getWidth(),
                               child: ClipPath(
                                 clipper: DrawClip(1),
-                                child: Image.asset(
-                                  'assets/images/no-avatar.png',
-                                ),
+                                child: user.avatarUrl != null
+                                    ? Image.network(
+                                        user.avatarUrl!,
+                                      )
+                                    : Image.asset(
+                                        'assets/images/no-avatar.png',
+                                      ),
                               ),
                             ),
                             ClipPath(

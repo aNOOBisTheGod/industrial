@@ -74,6 +74,7 @@ class _AccountPageState extends State<AccountPage> {
       body: StreamBuilder<Object>(
           stream: Database().getUserStream(Auth().currentUser!.uid),
           builder: (context, snapshot) {
+            print(snapshot.data);
             if (snapshot.data == null) {
               return Center(
                 child: CircularProgressIndicator(),
